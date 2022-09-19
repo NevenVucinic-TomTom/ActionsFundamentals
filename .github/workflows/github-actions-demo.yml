@@ -1,0 +1,16 @@
+name: GHA-demo
+on:
+ push:
+    branches:
+    - main
+    - release/*
+jobs:
+    name: check
+    runs-on: ubuntu-latest
+      steps:
+      - name: check
+        run: |
+        uname -u 
+    
+    
+   
