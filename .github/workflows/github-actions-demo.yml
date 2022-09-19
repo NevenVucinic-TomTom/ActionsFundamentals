@@ -5,12 +5,14 @@ on:
     - main
     - release/*
 jobs:
+  check-os: 
     name: check
     runs-on: ubuntu-latest
-      steps:
+    steps:
       - name: check
-        run: |
-        uname -u 
+        run: uname -u 
+        shell: bash
+
     
     
    
